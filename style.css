@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background: linear-gradient(to bottom, #87ceeb 20%, #b0e2ff 40%, #e6f7ff 60%);
+  width: 80%;
+  height: 100vh;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+.container .row {
+  margin-left: 100px;
+}
+.container .search {
+  height: 35px;
+  width: 300px;
+  margin: 45px 0 15% 15%;
+  padding-left: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: width 400ms;
+}
+.container .search:focus {
+  width: 500px;
+}
+.container .search::placeholder {
+  color: white;
+  font-weight: bold;
+}
+.container .searchBtn {
+  height: 37px;
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #222;
+  color: #87ceeb;
+  cursor: pointer;
+}
+.container .row-2 .img img {
+  width: 240px;
+}
+.container .row-2 {
+  display: flex;
+  margin-top: -70px;
+  margin-left: 100px;
+}
+
+.container .row-3 h1 {
+  font-size: 60px;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-weight: 100;
+}
+.container .row-3 h1 .c {
+  font-size: 70px;
+}
+.container .row-4 i {
+  font-size: 50px;
+  margin-left: 45%;
+  color: #87ceeb;
+}
+.container .row-4 {
+  margin-top: -40px;
+}
+.container .row-4 h2 {
+  margin-left: 43%;
+  padding-top: 5px;
+}
+.container .row-4 h3{
+    margin-left: 42%;
+    color: #87ceeb;
+    font-size: 35px;
+    padding-top: 5px;
+  }
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .container .row {
+    margin-left: 20px;
+  }
+  .container .search {
+    width: 120px;
+    margin-left: 5%;
+    margin-bottom: 0;
+    transition: all 0.4s;
+  }
+  .container .search:focus {
+    width: 250px;
+  }
+  .container .searchBtn {
+    margin-top: 10px;
+  }
+  .container .row-2 {
+    margin-top: 10px;
+    margin-left: 30px;
+    flex-direction: column;
+  }
+  .container .row-3 h1 {
+    margin-top: 40px;
+  }
+  .container .row-4 {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  .container .row-4 h2,
+  .time {
+    margin-left: 40%;
+  }
+  .container .row-4 h3{
+    margin-left: 37%;
+  }
+}
